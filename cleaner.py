@@ -3,7 +3,7 @@ Known issues:
 1. If there are more than 50 entities to interact script needed to run multiple times
 """
 
-from globals import MY_CHANNEL_ID
+from config import MY_CHANNEL_ID
 from credentilas_getter import get_credentials
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError

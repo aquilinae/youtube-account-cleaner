@@ -4,8 +4,10 @@ import pickle
 from google.auth.transport.requests import Request
 from google_auth_oauthlib.flow import InstalledAppFlow
 
+from config import SECRET_FILE_NAME
 
-def get_credentials(client_secret_file='client_secret.json'):
+
+def get_credentials(client_secret_file=SECRET_FILE_NAME):
     """
     Get credentials and store it in project folder for future using.
     Watch https://www.youtube.com/watch?v=vQQEaSnQ_bs for obtain client_secret.json
